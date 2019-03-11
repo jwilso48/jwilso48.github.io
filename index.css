@@ -1,3 +1,74 @@
+/* Standanrd elements */
 body {
   background-image: url("./img/jay-street.jpg");
+}
+
+p {
+  font-family: monospace;
+}
+
+i {
+  font-size: 50px;
+  color: black;
+}
+
+/* Classes */
+.img-div img {
+  height: 80%;
+  /* position: absolute; */
+	top: 15%;
+	bottom: 15%;
+	left: 15%;
+	right: 15%;
+  margin: auto;
+}
+
+/* Individual elements */
+#container {
+  /* grid boyes */
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 30% 30% 20%;
+  grid-gap: 15px;
+  grid-template-areas: 
+    "avi avi about-me about-me"
+    "avi avi about-me about-me"
+    "avi avi about-me about-me"
+    "social social about-me about-me";
+
+  /* center this boye on the page */
+  position: absolute;
+	top: 25%;
+	bottom: 25%;
+	left: 15%;
+	right: 15%;
+	margin: auto;
+}
+
+#avi {
+  grid-area: avi;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#collage {
+  grid-area: collage;
+  width: 100%;
+}
+
+#social {
+  padding: 20px;
+  background-color: whitesmoke;
+  grid-area: social;
+  display: flex;
+  justify-content: space-around;
+}
+
+#about-me {
+  grid-area: about-me;
+  background-color: whitesmoke;
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-right: 10%;
 }
